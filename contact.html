@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact Me</h1>
+        <h2>Robinson Wesonga</h2>
+        <h2>Website Developer & Graphic Designer</h2>
+        <img src="images/image.png" alt="image.png">
+    </header>
+
+    <main>
+        <p>Feel free to reach out to me using the form below for collaborations or just friendly hello</p>
+        <form>
+            <label for="Name"><b>Full Name:</b></label>
+            <input type="text" id="Name" name="name" placeholder="-Enter your full names-" required>
+
+            <label for="email"><b>Email Address:</b></label>
+            <input type="email" id="email" name="email" placeholder="-Enter your email address-" required>
+
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" placeholder="10 digit number" pattern="[0-9]{10}">
+
+            <label for="services Interested in"><b>Service Interested In:</b></label>
+            <select id="services" name="services" required>
+                <option value="" disabled selected>--Select a service--</option>
+                <option>Web Design</option>
+                <option>Web Development</option>
+                <option>Portfolio Website</option>
+                <option>Graphic Design</option>
+            </select>
+
+            <label for="Message"><b>Message:</b></label>
+            <textarea id="Message" name="message" rows="5" placeholder="-Enter your queries or message-" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
