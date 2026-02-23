@@ -1,3 +1,7 @@
+.dark{
+    background-color: maroon;
+    color: white;
+}
 /* GENERAL STYLES */
 * {
     margin: 0;
@@ -18,7 +22,7 @@ body {
 
 /* NAVIGATION */
 nav {
-    background: #222;
+    background: red;
     padding: 15px;
     border-radius: 20px;
 }
