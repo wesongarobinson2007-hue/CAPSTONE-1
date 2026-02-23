@@ -14,7 +14,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: burlywood;
+    background-color: grey;
     color: #333;
     border-radius: 80px;
 
@@ -142,39 +142,7 @@ section h2 {
     gap: 20px;
     flex-wrap: wrap;
 }
-
-/* FORM */
-form {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-form label {
-    display: block;
-    margin-top: 15px;
-}
-
-form input,
-form textarea,
-form select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-form button {
-    margin-top: 20px;
-    background: #2563eb;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #1e40af;
-}
+        
 
 /* FOOTER */
 footer {
@@ -184,3 +152,67 @@ footer {
     color: white;
     border-radius: 40px;
 }
+.form-container{
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+    margin-left: 300px;
+    margin-top: 80px;
+    padding: 40px;
+    border-radius: 15px;
+    width: 380px;
+    height: 540px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,255,255,0.3)  
+}
+h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.input-box{
+    position: relative;
+    margin: 20px 0;
+}
+.input-box input{
+    width: 100%;
+    padding: 15px 18px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: 0.4s;
+}
+.input-box input:focus{
+    border-color: #00ffff;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+}
+.input-box span{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    pointer-events: none;
+    transition: translateY(-50%);
+}
+.input-box input:focus + span,.input-box input:not(:placeholder-shown) + span{
+    top: 5px;
+    font-size: 10px;
+    color: #00ffff;
+}
+.submit-btn{
+    background: linear-gradient(90deg,#00ffff,#00ff80);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 10px;
+ }
+ .submit-btn:hover{
+    background:linear-gradient(90deg,#00ff80,#00ffff);
+    box-shadow: 0 5px 15px #00ffff80;
+ }
