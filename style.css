@@ -19,6 +19,10 @@ body {
     background-size: cover;
     color: #333;
     border-radius: 80px;
+    height: 100vh;
+    background-position-x: right;
+    background-position: center;
+    backface-visibility: hidden;
 
 }
 
@@ -90,6 +94,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #facc15;
 }
+h2 {
+    color: orange;
+    margin-bottom: 15px;
+}
 
 @media screen {}
 
@@ -130,12 +138,23 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #6cdaa3;
+
 }
 .mission p {
     font-size: 1.2rem;
-    color: #333;
+    color: white;
     margin-left: 20px;
+}
+.mission ul {
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    color: white;
+}
+.blog h2{
+    color: orange;
 }
 
 /* MAIN CONTENT */
@@ -151,7 +170,7 @@ section {
 }
 
 section h2 {
-    color: #1e3a8a;
+    color: orange;
     margin-bottom: 15px;
 }
 
