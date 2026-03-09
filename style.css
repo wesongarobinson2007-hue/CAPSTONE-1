@@ -15,7 +15,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background: url('images/Mini Editors at Work – Powering Video Creation.jpg') no-repeat center center fixed;
+    background: #2c2b2b;
     background-size: cover;
     background-attachment: fixed;
     color: #333;
@@ -26,13 +26,27 @@ body {
     backface-visibility: hidden;
 
 }
+.contacts{
+    background: cornsilk;
+    padding: 20px;
+}
+.contacts li {
+    background: #00bcd4;
+    padding: 15px;
+    border-radius: 10px;
+}
+.contacts li:hover {
+    background: #00ffff;
+    color: black;
+    font-weight: bold;
+}
 
 /* NAVIGATION */
 nav {
     padding: 15px;
     border-radius: 20px;
     backdrop-filter: blur(30px);
-    border: 2px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(238, 42, 124, 0.8);
     box-shadow: 10px 10px 20px #111, -10px -10px 20px #ddd;
 }
 
@@ -49,25 +63,7 @@ nav ul {
 
 }
 
-.skill {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #e0f2fe;
-    border-radius: 8px;
-}
 
-.skill h3 {
-    margin-bottom: 10px;
-}
-
-.skill ul {
-    list-style: square;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    align-items: center;
-}
 
 .hero {
     background: olive;
@@ -113,7 +109,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(191, 243, 5, 0.2);
     border-radius: 80px;
 }
 
@@ -222,9 +218,15 @@ footer {
     text-align: center;
     box-shadow: 0 0 15px rgba(13, 241, 13, 0.3)
 }
+p{
+    color: white;
+}
+h1{
+    color: green;
+}
 
 h2 {
-    color: #fff;
+    color: orange;
     margin-bottom: 20px;
 }
 .genje {
@@ -233,9 +235,11 @@ h2 {
     border-radius: 50%;
     margin-top: 20px;
     display: flex;
+    border: #eef113;
+    box-shadow: rgb(17, 19, 18);
     justify-content: center;
     align-items: center;
-    -webkit-box-reflect: left 0px linear-gradient(transparent, transparent, #0005);
+    -webkit-box-reflect: le 0px linear-gradient(transparent, transparent, #0005);
 }
 
 /*password section*/
