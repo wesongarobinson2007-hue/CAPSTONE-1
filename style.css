@@ -29,9 +29,11 @@ body {
 
 /* NAVIGATION */
 nav {
-    background: rgb(83, 6, 50);
     padding: 15px;
     border-radius: 20px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 20px #111, -10px -10px 20px #ddd;
 }
 
 nav ul {
@@ -95,6 +97,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #facc15;
 }
+
 h2 {
     color: orange;
     margin-bottom: 15px;
@@ -123,6 +126,7 @@ header img {
     display: flex;
 
 }
+
 .image {
     width: 30%;
     height: auto;
@@ -130,6 +134,7 @@ header img {
     margin-top: 20px;
     justify-content: space-between;
 }
+
 .mission {
     padding: 30px;
     border-radius: 10px;
@@ -141,11 +146,13 @@ header img {
     justify-content: space-around;
 
 }
+
 .mission p {
     font-size: 1.2rem;
     color: white;
     margin-left: 20px;
 }
+
 .mission ul {
     list-style: square;
     margin-left: 20px;
@@ -154,7 +161,8 @@ header img {
     align-items: center;
     color: white;
 }
-.blog h2{
+
+.blog h2 {
     color: orange;
 }
 
@@ -219,6 +227,16 @@ h2 {
     color: #fff;
     margin-bottom: 20px;
 }
+.genje {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: left 0px linear-gradient(transparent, transparent, #0005);
+}
 
 /*password section*/
 
@@ -235,7 +253,7 @@ input {
     background: var(--input-bg);
     outline: none;
     transition: border-color 0.2s, color 0.2s;
-    
+
 }
 
 
@@ -245,15 +263,36 @@ input {
 }
 
 .input-box input {
-    width: 100%;
-    padding: 15px 18px;
+    width: 280px;
+    padding: 15px 28px;
     background: none;
-    border: none;
+    border: 1px solid black;
+    border-radius: 8px;
     outline: none;
     color: #fff;
     font-size: 18px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     transition: 0.4s;
+}
+
+.input-box label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: black;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 3s;
+}
+
+.input-box input:focus+label,
+.input-box input:valid+label {
+    top: -9px;
+    background-color: black;
+    font-size: 13px;
+    padding: 2px 7px;
+    color: white;
+    border-radius: 12px;
 }
 
 .input-box input:focus {
@@ -312,42 +351,78 @@ input {
     opacity: 1;
 }
 
-.contacts{
+.contacts {
     list-style: none;
     padding: 0px;
     max-width: 800px;
     margin: 20px auto;
     font-size: 18px;
-    display:grid ;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns if screen is wide*/
-    gap:15px 50px; /*row and column gap */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 2 columns if screen is wide*/
+    gap: 15px 50px;
+    /*row and column gap */
 }
-.contacts li{
+
+.contacts li {
     display: flex;
     align-items: center;
-    gap: 12px; /*space between icon and text*/
+    gap: 12px;
+    /*space between icon and text*/
 
 }
+
 /*Colored icons*/
-.contacts i.phone { color: #0a74da; }
-.contacts i.instagram { color: #E1306C; }
-.contacts i.tiktok { color: #010101; }
-.contacts i.whatsapp { color: #25D366; }
-.contacts i.email { color: #FF4500; }
-.contacts i.linkedin { color: #0077B5; }
-.contacts i.facebook { color: #1877F2; }
-.contacts i.github { color: #000000; }
-.contacts i.pinterest { color: #E60023; }
-.contacts i.youtube { color: #FF0000; }
-.contacts i.twitter { color: #1DA1F2; }
+.contacts i.phone {
+    color: #0a74da;
+}
+
+.contacts i.instagram {
+    color: #E1306C;
+}
+
+.contacts i.tiktok {
+    color: #010101;
+}
+
+.contacts i.whatsapp {
+    color: #25D366;
+}
+
+.contacts i.email {
+    color: #FF4500;
+}
+
+.contacts i.linkedin {
+    color: #0077B5;
+}
+
+.contacts i.facebook {
+    color: #1877F2;
+}
+
+.contacts i.github {
+    color: #000000;
+}
+
+.contacts i.pinterest {
+    color: #E60023;
+}
+
+.contacts i.youtube {
+    color: #FF0000;
+}
+
+.contacts i.twitter {
+    color: #1DA1F2;
+}
 
 /*Links*/
-.contacts a{
+.contacts a {
     text-decoration: none;
-    color:whitesmoke
+    color: whitesmoke
 }
 
 .contacts a:hover {
-    color:#ff4500;
+    color: #ff4500;
 }
-
