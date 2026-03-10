@@ -12,9 +12,7 @@
 
 <body>
    
-    <input type="checkbox" onclick="document.body.classList.toggle('dark')">
-    <span>Dark Mode</span>
-
+    
     <nav class="sidebar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,16 +27,16 @@
         <h1 style="color: black; text-decoration: underline;">HOME</h1>
         <h1>Welcome to My Portfolio</h1>
         <p>I am a creative website developer</p>
-        <img src="images/642961616_18037178177574374_8759530237700538439_n.jpg" alt="image.png">
+        <img class="logo" src="images/642961616_18037178177574374_8759530237700538439_n.jpg" alt="image.png">
     </header>
      <section style="padding: 40px;" class="Content">
         <h1>Hello I'm Robinson Opondo</h1>
         <h2>Who I Am</h2>
         <p><b>Aspiring Web Developer / Designer / Programmer</b></p>
         <ol>
-        <li><p2>I am a passionate web developer who creates<br> beautiful and functional websites.<br>Websites which are
+        <li><p>I am a passionate web developer who creates<br> beautiful and functional websites.<br>Websites which are
             generally clean, modern, and responsive.<br>This portfolio showcases my skills, services, ideas and
-            projects.</p2></li>
+            projects.</p></li>
         <li><p>
             I design and build modern, responsive and user-friendly<br> websites using HTML, CSS and creativity.
         </p></li>
@@ -64,7 +62,7 @@
     </section>
 
     <section class="Content" style="font-size: larger; color: blue;">
-        <h2>What I do</h2>
+        <h2 style="padding: 30px;">What I do</h2>
         <div class="grid">
             <div class="card">
                 <h3><b>Web design</h3>
@@ -84,12 +82,14 @@
 
     <section style="padding: 40px;" class="Content">
         <h2>Why Choose Me?</h2>
-        <ul>
-            <li>Clean and readable code</li>
-            <li>simple and modern designing</li>
-            <li>Mobile-friendly layouts</li>
-            <li>Passionate about learning</li>
+        <div class="card">
+        <ul style="color: white;">
+            <li><p>Clean and readable code</p></li>
+            <li><p>simple and modern designing</p></li>
+            <li><p>Mobile-friendly layouts</p></li>
+            <li><p>Passionate about learning</p></li>
         </ul>
+        </div>
     </section>
 
     <section style="padding: 40px;" class="Content">
@@ -103,21 +103,25 @@
    
 
     <section class="Content">
-        <h2 style="text-decoration: underline;"><b>My Core Skills</b></h2>
-        <ul style="padding: 40px;">
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript & jQuery</li>
-            <li>Responsive Web Design</li>
-            <li>Web Performance Optimization</li>
-            <li>Cross-Browser Compatibility</li>
-            <li>Version Control with Git</li>
-            <li>git & GitHub</li>
-            <li>SEO Best Practices</li>
+        <h2 style="text-decoration: underline; padding: 30px;"><b>My Core Skills</b></h2>
+         <div class="card">
+        <ul style="padding: 40px; color: white;"> 
+            <li><p>HTML5 & CSS3</p></li>
+            <li><p>JavaScript & jQuery</li></li>
+            <li><p>Responsive Web Design</p></li>
+            <li><p>Web Performance Optimization</p></li>
+            <li><p>Cross-Browser Compatibility</p></li>
+            <li><p>Version Control with Git</p></li>
+            <li><p>git & GitHub<p></li>
+            <li><p>SEO Best Practices<p></li>
         </ul>
+        </div>
+    </section>
 
-        <h2>where to find me</h2>
+    <section>
+        <h2 style="padding: 30px;">where to find me</h2>
 
-        <h2 class="reach">Follow Us on:</b></h2>
+        <h2 class="reach" style="padding: 30px;">Follow Us on:</b></h2>
 
         <ul class="contacts">
             <li><i class="fa-solid fa-phone phone"> </i><a href="tel:+254116774266">+254 116 774 266</a></li>

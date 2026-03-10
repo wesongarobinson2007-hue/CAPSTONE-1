@@ -1,8 +1,3 @@
-.dark {
-    background-color: black;
-    color: white;
-}
-
 /* GENERAL STYLES */
 * {
     margin: 0;
@@ -26,34 +21,40 @@ body {
     backface-visibility: hidden;
 
 }
-.contacts{
-    background: cornsilk;
+.container {
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
 }
-.contacts li {
-    background: #00bcd4;
-    padding: 15px;
-    border-radius: 10px;
-}
+
 .contacts li:hover {
-    background: #00ffff;
+    background: linear-gradient(to right bottom, cyan, #9c029c);
     color: black;
     font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    margin: 12px;
+    top: 0;
+    left: 0;
+    padding: 15px;
 }
 
 /* NAVIGATION */
 nav {
-    padding: 15px;
+    padding: 15px; 
     border-radius: 20px;
     backdrop-filter: blur(30px);
     border: 2px solid rgba(238, 42, 124, 0.8);
     box-shadow: 10px 10px 20px #111, -10px -10px 20px #ddd;
+    
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    
 }
 
 .paragraph {
@@ -63,8 +64,6 @@ nav ul {
 
 }
 
-
-
 .hero {
     background: olive;
     color: antiquewhite;
@@ -72,16 +71,9 @@ nav ul {
     text-align: center;
 }
 
-.content {
-    background: whitesmoke;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 6px;
-}
-
-
 nav ul li {
     margin: 0 15px;
+    
 }
 
 nav ul li a {
@@ -92,6 +84,16 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #facc15;
+    background: linear-gradient(to right bottom, cyan, #9c029c);
+    position: sticky;
+    transition: 0.2s ease-in-out;
+    margin: 12px;
+    width: 94px;
+    top: 0;
+    left: 0;
+    padding: 15px; 
+    border-radius: 20px;
+    
 }
 
 h2 {
@@ -129,6 +131,18 @@ header img {
     border-radius: 20px;
     margin-top: 20px;
     justify-content: space-between;
+}
+.logo {
+    width: 150px;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: flex;
+    border: #eef113;
+    box-shadow: rgb(17, 19, 18);
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: left 0px linear-gradient(transparent, transparent, #0005) ;
 }
 
 .mission {
@@ -178,16 +192,62 @@ section h2 {
     color: orange;
     margin-bottom: 15px;
 }
+section .services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 /* CARDS */
 .card {
-    background: white;
-    padding: 20px;
+    width: min(420px, 90vw);
+    background: linear-gradient(120deg, rgba(255,255,255,0.08),rgba(255,255,255,0.02));
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 50px rgba(56, 189, 248, 0.35),inset 0 0 35px rgba(255,255,255,0.35);
+    transform-style: preserve-3d;
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    padding: 2.5rem;
     margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 28px;
+  
+}
+.card h2 {
+    color: #00bcd4;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.card p {
+    color: white;
+    opacity: 0.85;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+   
+.card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(120deg, transparent 20%,var(--c1),var(--c2),var(--c3), transparent 80%);
+    filter: blur(25px);
+    opacity: 0.4;
+    z-index: -1;
+    animation: holo 4s linear infinite;
 }
 
+@keyframes holo{
+    to{
+        background-position: 400% 0;
+    }
+}
+@keyframes float {
+    0%, 100% {
+        transform: rotateX(12deg) rotateY(-10deg) translateY(0);
+    }
+    50% {
+        transform: rotateX(18deg) rotateY(12deg) translateY(-25px);
+    }
+}
 /* BLOG & SERVICES GRID */
 .grid {
     display: grid;
@@ -228,18 +288,6 @@ h1{
 h2 {
     color: orange;
     margin-bottom: 20px;
-}
-.genje {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-    display: flex;
-    border: #eef113;
-    box-shadow: rgb(17, 19, 18);
-    justify-content: center;
-    align-items: center;
-    -webkit-box-reflect: le 0px linear-gradient(transparent, transparent, #0005);
 }
 
 /*password section*/
@@ -429,4 +477,16 @@ input {
 
 .contacts a:hover {
     color: #ff4500;
+}
+.one{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.one:hover .card {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
