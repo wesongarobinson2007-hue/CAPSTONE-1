@@ -672,7 +672,12 @@ footer {
 
     .search-bar {
         top: 27%;
-        left: 35%;
+        left: 48%;
+        padding: 6px 12px;
+    }
+    .search-button {
+        top: 35%;
+        left: 50%;
         padding: 6px 12px;
     }
 }
