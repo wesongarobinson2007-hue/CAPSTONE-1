@@ -229,7 +229,7 @@ header img {
 .logo {
     width: 150px;
     height: 100%;
-    border-radius: 50%;
+    clip-path:circle(50%);
     margin-top: 20px;
     display: flex;
     border: #eef113;
