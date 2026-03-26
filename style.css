@@ -21,9 +21,12 @@ body {
     backface-visibility: hidden;
 
 }
+
+
+/*search buttons styling*/
 .search-bar {
     position: absolute;
-    top: 43%;
+    top: 42%;
     left: 30%;
     transform: translate(-50%, -50%);
     filter: blur(10%);
@@ -35,23 +38,60 @@ body {
     background: rgba(253, 2, 128, 0.952);
     color: white;
     font-size: 16px;
-   
+
 }
+
+.search-bar:hover {
+
+    box-shadow: 0 5px 15px #00ffff80;
+    z-index: 10;
+    color: #2c2825;
+}
+
+.search-button {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(10%);
+    gap: 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgba(253, 2, 128, 0.952);
+    color: white;
+    font-size: 16px;
+
+}
+
+.search-button:hover {
+
+    box-shadow: 0 5px 15px #00ffff80;
+    z-index: 10;
+    color: #2c2825;
+}
+
+
+
+/*hire me button styling*/
 .button {
     background: linear-gradient(90deg, #00ffff, #00ff80);
     border: none;
-    padding: 12px 30px;
+    padding: 6px 15px;
     border-radius: 25px;
     color: #000;
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
+
 }
+
 .button:hover {
     background: linear-gradient(90deg, #00ff80, #00ffff);
     box-shadow: 0 5px 15px #00ffff80;
 
-}    
+}
 
 .button::before {
     content: "";
@@ -69,6 +109,7 @@ body {
 .button:hover::before {
     opacity: 1;
 }
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -78,23 +119,24 @@ body {
 
 /* NAVIGATION */
 nav {
-    padding: 15px; 
+    padding: 15px;
     border-radius: 20px;
     backdrop-filter: blur(30px);
     border: 2px solid rgba(238, 42, 124, 0.8);
     box-shadow: 10px 10px 20px #111, -10px -10px 20px #ddd;
-    
+
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    
+
 }
+
 nav ul li {
     margin: 0 15px;
-    
+
 }
 
 nav ul li a {
@@ -112,31 +154,39 @@ nav ul li a:hover {
     width: 94px;
     top: 0;
     left: 0;
-    padding: 15px; 
+    padding: 15px;
     border-radius: 20px;
-    
 }
 
 
-.paragraph {
+/*.paragraph {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 
-}
+}*/
 
+/*the hero section*/
 .hero {
     background: olive;
     color: antiquewhite;
     padding: 50px;
     text-align: center;
+    border-radius: 18px;
+}
+
+.hero:hover {
+    box-shadow: 0 5px 15px #00ffff80;
+    background-color: maroon;
+    position: sticky;
+    transition: 0.2s ease-in-out;
 }
 
 
-h2 {
+/*h2 {
     color: orange;
     margin-bottom: 15px;
-}
+}*/
 
 /* HEADER SECTION */
 header {
@@ -145,11 +195,12 @@ header {
     padding: 20px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     box-shadow: 0 4px 6px rgba(191, 243, 5, 0.2);
-    border-radius: 80px;}
+    border-radius: 80px;
+}
 
-header:hover{
+header:hover {
     box-shadow: 0 0 15px rgba(13, 241, 13, 0.3);
     transform-style: preserve-3d;
     transform: perspective(1000px);
@@ -174,6 +225,7 @@ header img {
     margin-top: 20px;
     justify-content: space-between;
 }
+
 .logo {
     width: 150px;
     height: 100%;
@@ -184,10 +236,10 @@ header img {
     box-shadow: rgb(17, 19, 18);
     justify-content: center;
     align-items: center;
-    -webkit-box-reflect: left 0px linear-gradient(transparent, transparent, #0005) ;
+    -webkit-box-reflect: left 0px linear-gradient(transparent, transparent, #0005);
 }
 
-.mission {
+/*.mission {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -212,7 +264,7 @@ header img {
     padding: 10px;
     align-items: center;
     color: white;
-}
+}*/
 
 /* MAIN CONTENT */
 main {
@@ -230,18 +282,19 @@ section h2 {
     color: orange;
     margin-bottom: 15px;
 }
-section .services{
+
+section .services {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-/* CARDS */
+/* THE FLOATING CARDS STYLING */
 .card {
     width: min(420px, 90vw);
-    background: linear-gradient(120deg, rgba(255,255,255,0.08),rgba(255,255,255,0.02));
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
     backdrop-filter: blur(16px);
-    box-shadow: 0 0 50px rgba(56, 189, 248, 0.35),inset 0 0 35px rgba(255,255,255,0.35);
+    box-shadow: 0 0 50px rgba(56, 189, 248, 0.35), inset 0 0 35px rgba(255, 255, 255, 0.35);
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: float 6s ease-in-out infinite;
@@ -249,75 +302,83 @@ section .services{
     padding: 2.5rem;
     margin: 15px 0;
     border-radius: 28px;
-  
+
 }
+
 .card h2 {
     color: #00bcd4;
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
+
 .card p {
     color: white;
     opacity: 0.85;
     font-size: 1.1rem;
     line-height: 1.6;
 }
-   
+
 .card::before {
     content: "";
     position: absolute;
     inset: -2px;
-    background: linear-gradient(120deg, transparent 20%,var(--c1),var(--c2),var(--c3), transparent 80%);
+    background: linear-gradient(120deg, transparent 20%, var(--c1), var(--c2), var(--c3), transparent 80%);
     filter: blur(25px);
     opacity: 0.4;
     z-index: -1;
     animation: holo 4s linear infinite;
 }
+
 .card:nth-child(1)::before {
-    --c1: #ff3c78;
-    --c2: #ffb300;
-    --c3: #00ff85;
+    --c1: blue;
+    --c2: purple;
+    --c3: red;
 }
-.card:hover{
+
+.card:hover {
     background: linear-gradient(to right bottom, cyan, #9c029c);
     position: sticky;
     transition: 400ms ease-in-out;
     transform: skew(30deg, 20deg);
 }
 
-@keyframes holo{
-    to{
+@keyframes holo {
+    to {
         background-position: 400% 0;
     }
 }
+
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotateX(12deg) rotateY(-10deg) translateY(0);
     }
+
     50% {
         transform: rotateX(18deg) rotateY(12deg) translateY(-25px);
     }
 }
-/* BLOG & SERVICES GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    flex-wrap: wrap;
+
+
+/* General paragraph h1 and h2 styling */
+
+p {
+    color: white;
+
 }
 
-p{
-    color: white;
-    gap: 2px;
-}
-h1{
-    color: green;
+h1 {
+    color: black;
 }
 
 h2 {
     color: orange;
     margin-bottom: 20px;
 }
+
+/* The contact form styling*/
+
 .form-container {
     background: rgba(19, 80, 82, 0.1);
     margin-bottom: 10px;
@@ -466,6 +527,7 @@ input {
     /*space between icon and text*/
 
 }
+
 .contacts li:hover {
     background: linear-gradient(to right bottom, cyan, #9c029c);
     color: black;
@@ -536,7 +598,7 @@ input {
 }
 
 /*card section styling*/
-.one{
+.one {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -554,49 +616,63 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .one{
+    .one {
         flex-direction: column;
         top: 15px;
         right: 5px;
         padding: 5px;
         justify-content: center;
 
-        
+
     }
-    .contacts{
+
+    .contacts {
         align-items: center;
         flex-direction: column;
         justify-content: center;
         padding: 15px;
     }
-    .form-container{
+
+    .form-container {
         margin-left: 15px;
     }
-    header{
+
+    header {
         padding: 0;
         margin: 0;
         justify-content: center;
     }
+
     .paragraph {
-    font-size: 1px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+        font-size: 1px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
     }
-    p{
+
+    p {
         font-size: x-small;
     }
-    h2{
-        color: rgb(247, 8, 187);
+
+    h2 {
+        color: gold;
         font-size: medium;
     }
-    h1{
+
+    h1 {
         color: rgb(75, 245, 8);
         font-size: large;
     }
+
     .logo {
-    width: 100px;
-    height: 100%;
-    border-radius: 50%;
-    margin-top: 10px;
-}
+        width: 100px;
+        height: 100%;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        top: 27%;
+        left: 35%;
+        padding: 6px 12px;
+    }
 }
