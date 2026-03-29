@@ -1,4 +1,4 @@
-let text = " Robinson wesonga";
+let text = " Robinson Wesonga";
 ;
 
 let i = 0;

@@ -78,8 +78,8 @@ body {
 .button {
     background: linear-gradient(90deg, #00ffff, #00ff80);
     border: none;
-    padding: 6px 15px;
-    border-radius: 25px;
+    padding: 4px 10px;
+    border-radius: 15px;
     color: #000;
     font-weight: bold;
     cursor: pointer;
@@ -116,7 +116,42 @@ body {
     padding: 20px;
 }
 
+/*home and its image styling*/
+.Home {
+    width: 450px;
+    height: 80%;
+    object-fit: contain;
+    margin-top: 40px;
+    cursor: cell;
 
+}
+
+.main-body {
+    display: flex;
+    flex: 1;
+}
+
+.main-body-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Home:hover {
+    transition: all 3ms ease-in-out;
+    transform: scale(1.05);
+    filter: brightness(1.4);
+    text-shadow: 0 0 15px rgb(255, 51, 0);
+}
+
+.mwecheche{
+    padding: 30px;
+}
 /* NAVIGATION */
 nav {
     padding: 15px;
@@ -158,14 +193,6 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
-
-/*.paragraph {
-    font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-
-}*/
-
 /*the hero section*/
 .hero {
     background: olive;
@@ -181,12 +208,6 @@ nav ul li a:hover {
     position: sticky;
     transition: 0.2s ease-in-out;
 }
-
-
-/*h2 {
-    color: orange;
-    margin-bottom: 15px;
-}*/
 
 /* HEADER SECTION */
 header {
@@ -229,7 +250,7 @@ header img {
 .logo {
     width: 150px;
     height: 100%;
-    clip-path:circle(50%);
+    clip-path: circle(50%);
     margin-top: 20px;
     display: flex;
     border: #eef113;
@@ -238,33 +259,6 @@ header img {
     align-items: center;
     -webkit-box-reflect: left 0px linear-gradient(transparent, transparent, #0005);
 }
-
-/*.mission {
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.mission p {
-    font-size: 1.2rem;
-    color: white;
-    margin-left: 20px;
-}
-
-.mission ul {
-    list-style: square;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    align-items: center;
-    color: white;
-}*/
 
 /* MAIN CONTENT */
 main {
@@ -671,13 +665,23 @@ footer {
     }
 
     .search-bar {
-        top: 27%;
+        top: 27%o;
         left: 48%;
         padding: 6px 12px;
     }
+
     .search-button {
         top: 35%;
         left: 50%;
         padding: 6px 12px;
     }
+    .Home {
+    width: 150px;
+    height: 30%;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 40px;
+    cursor: cell;
+
+}
 }
